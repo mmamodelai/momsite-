@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlene Clare — Certified Peer Support Specialist</title>
+  <meta name="description" content="Charlene Clare — Certified Peer Support Specialist (State of California) offering compassionate, remote peer support and client advocacy. San Diego, CA." />
+
+  <!-- Open Graph (nice preview when she pastes the link) -->
+  <meta property="og:title" content="Charlene Clare — Certified Peer Support Specialist" />
+  <meta property="og:description" content="Compassionate, remote peer support and client advocacy. San Diego, CA." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --cream:#faf7f1;
+      --card:#ffffff;
+      --ink:#2c2b29;
+      --soft:#6b6862;
+      --sage:#5e7d6f;
+      --sage-dark:#456053;
+      --sage-tint:#eef3f0;
+      --gold:#b9895a;
+      --line:#e7e2d8;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      background:var(--cream);
+      color:var(--ink);
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:860px;margin:0 auto;padding:0 24px;}
+    h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.15;letter-spacing:-0.01em;}
+
+    /* ---- hero ---- */
+    header{
+      background:
+        radial-gradient(1200px 500px at 80% -10%, var(--sage-tint), transparent 60%),
+        var(--cream);
+      padding:72px 0 56px;
+      border-bottom:1px solid var(--line);
+    }
+    .eyebrow{
+      display:inline-block;
+      font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;
+      color:var(--sage-dark);font-weight:600;
+      background:var(--sage-tint);
+      padding:6px 14px;border-radius:30px;margin-bottom:22px;
+    }
+    h1{font-size:clamp(2.4rem,6vw,3.6rem);color:var(--ink);margin-bottom:14px;}
+    .lede{font-size:clamp(1.05rem,2.4vw,1.28rem);color:var(--soft);max-width:600px;margin-bottom:30px;}
+    .lede strong{color:var(--ink);font-weight:600;}
+
+    .btns{display:flex;flex-wrap:wrap;gap:12px;}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:0.95rem;font-weight:600;text-decoration:none;
+      padding:12px 22px;border-radius:10px;transition:.18s;
+    }
+    .btn-primary{background:var(--sage);color:#fff;}
+    .btn-primary:hover{background:var(--sage-dark);transform:translateY(-1px);}
+    .btn-ghost{background:transparent;color:var(--sage-dark);border:1px solid var(--line);}
+    .btn-ghost:hover{background:#fff;border-color:var(--sage);}
+
+    /* ---- sections ---- */
+    section{padding:56px 0;border-bottom:1px solid var(--line);}
+    .kicker{
+      font-size:0.76rem;letter-spacing:0.16em;text-transform:uppercase;
+      color:var(--gold);font-weight:600;margin-bottom:14px;
+    }
+    h2{font-size:clamp(1.6rem,4vw,2.1rem);margin-bottom:20px;}
+    p.body{font-size:1.05rem;color:#403e3a;margin-bottom:18px;max-width:640px;}
+    p.body:last-child{margin-bottom:0;}
+
+    /* ---- offer cards ---- */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:8px;}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;
+      padding:24px 22px;transition:.18s;
+    }
+    .card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(70,96,83,.08);}
+    .card .ic{font-size:1.5rem;margin-bottom:10px;}
+    .card h3{font-size:1.12rem;margin-bottom:6px;color:var(--ink);}
+    .card p{font-size:0.94rem;color:var(--soft);}
+
+    /* ---- credentials ---- */
+    .creds{list-style:none;display:grid;gap:14px;margin-top:6px;}
+    .creds li{
+      background:var(--card);border:1px solid var(--line);border-left:3px solid var(--sage);
+      border-radius:10px;padding:16px 20px;
+    }
+    .creds .t{font-weight:600;color:var(--ink);font-size:1.02rem;}
+    .creds .d{font-size:0.92rem;color:var(--soft);margin-top:2px;}
+
+    /* ---- experience ---- */
+    .xp{display:grid;gap:18px;margin-top:6px;}
+    .xp-item{display:flex;gap:16px;align-items:flex-start;}
+    .dot{width:11px;height:11px;border-radius:50%;background:var(--sage);margin-top:7px;flex-shrink:0;}
+    .xp-item h3{font-size:1.08rem;color:var(--ink);}
+    .xp-item .meta{font-size:0.85rem;color:var(--gold);font-weight:600;margin-bottom:3px;}
+    .xp-item p{font-size:0.96rem;color:var(--soft);}
+
+    /* ---- contact ---- */
+    #contact{border-bottom:none;text-align:center;background:var(--sage-tint);}
+    #contact h2{margin-bottom:10px;}
+    #contact p.body{margin:0 auto 26px;color:#3e4a44;}
+    .contact-links{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+    .contact-links a,.contact-links button{
+      display:inline-flex;align-items:center;gap:8px;
+      background:#fff;border:1px solid var(--line);border-radius:10px;
+      padding:14px 22px;text-decoration:none;color:var(--ink);font-weight:600;font-size:1rem;
+      transition:.18s;cursor:pointer;font-family:inherit;
+    }
+    .contact-links a:hover,.contact-links button:hover{border-color:var(--sage);transform:translateY(-1px);}
+    .contact-links a.static{cursor:default;}
+    .contact-links a.static:hover{border-color:var(--line);transform:none;}
+    .email-hint{font-size:0.9rem;color:var(--soft);margin-top:16px;}
+
+    footer{text-align:center;padding:30px 0;font-size:0.85rem;color:var(--soft);}
+
+    @media(max-width:560px){
+      header{padding:52px 0 40px;}
+      section{padding:44px 0;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="wrap">
+      <span class="eyebrow">Certified Peer Support Specialist · San Diego, CA</span>
+      <h1>Charlene Clare</h1>
+      <p class="lede">A calm, steady presence for people navigating life's hardest transitions —
+        offering <strong>compassionate peer support</strong> and genuine advocacy, available
+        <strong>remotely</strong> by phone and video.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#about">Learn more ↓</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="kicker">About</div>
+      <h2>Helping people feel heard, supported, and capable</h2>
+      <p class="body">I'm a Certified Peer Support Specialist through the State of California, with a
+        lifetime of helping people through stressful, high-stakes moments. I believe deeply in meeting
+        people where they are — with patience, honesty, and zero judgment — and walking alongside them
+        until they find their footing.</p>
+      <p class="body">Before peer support, I spent decades as a California real estate broker, guiding
+        families through some of the biggest decisions of their lives. The heart of that work was never
+        really the property — it was listening, building trust, and helping people stay steady when
+        everything felt overwhelming. That's the same gift I bring to peer support today.</p>
+    </div>
+  </section>
+
+  <!-- HOW I HELP -->
+  <section>
+    <div class="wrap">
+      <div class="kicker">How I Help</div>
+      <h2>What I bring to the work</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="ic">🤝</div>
+          <h3>Peer Support</h3>
+          <p>Certified, recovery-oriented support grounded in real lived experience and genuine empathy.</p>
+        </div>
+        <div class="card">
+          <div class="ic">💬</div>
+          <h3>Empathetic Listening</h3>
+          <p>I create a safe, judgment-free space where people feel truly heard and understood.</p>
+        </div>
+        <div class="card">
+          <div class="ic">🧭</div>
+          <h3>Navigating Hard Moments</h3>
+          <p>Decades of guiding people calmly through crisis, transition, loss, and big decisions.</p>
+        </div>
+        <div class="card">
+          <div class="ic">💻</div>
+          <h3>Remote-Ready</h3>
+          <p>Comfortable and effective over Zoom, phone, and email, with strong follow-through.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section>
+    <div class="wrap">
+      <div class="kicker">Credentials</div>
+      <h2>Certifications &amp; licenses</h2>
+      <ul class="creds">
+        <li>
+          <div class="t">Certified Peer Support Specialist</div>
+          <div class="d">State of California · California Mental Health Services Authority (CalMHSA) · 2025</div>
+        </li>
+        <li>
+          <div class="t">California Real Estate Broker — License #415456</div>
+          <div class="d">Active since 1985 · Designations: GRI, CNE, CCIM</div>
+        </li>
+        <li>
+          <div class="t">Trauma-Informed &amp; Recovery-Oriented Training</div>
+          <div class="d">Crisis navigation, confidentiality, ethics, and peer support best practices</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="wrap">
+      <div class="kicker">Experience</div>
+      <h2>A lifetime of caring for people</h2>
+      <div class="xp">
+        <div class="xp-item">
+          <div class="dot"></div>
+          <div>
+            <div class="meta">2025 – Present</div>
+            <h3>Certified Peer Support Specialist</h3>
+            <p>Supporting individuals through addiction, recovery, and life transitions with empathy,
+              encouragement, and respect for each person's own path.</p>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="dot"></div>
+          <div>
+            <div class="meta">1985 – Present</div>
+            <h3>Real Estate Broker · Self-Employed, San Diego</h3>
+            <p>Advised clients through emotional, high-stakes transitions — divorce, loss, downsizing,
+              relocation — with discretion, clarity, and care.</p>
+          </div>
+        </div>
+        <div class="xp-item">
+          <div class="dot"></div>
+          <div>
+            <div class="meta">Community</div>
+            <h3>Volunteer &amp; Caregiver</h3>
+            <p>Meals on Wheels volunteer (1999–2015) and a devoted family caregiver — experienced in
+              navigating healthcare and supporting loved ones through serious illness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="kicker" style="color:var(--sage-dark);">Contact</div>
+      <h2>Let's connect</h2>
+      <p class="body">I'm currently open to remote peer support and advisory roles. I'd love to hear
+        from you.</p>
+      <div class="contact-links">
+        <a href="mailto:CharleneClare@gmail.com">✉️ Email me</a>
+        <button type="button" id="copyEmail" onclick="copyEmail()" title="Copy email address">⧉ Copy email</button>
+        <a href="tel:+16199774777">📞 (619) 977-4777</a>
+        <a class="static">📍 San Diego, California</a>
+      </div>
+      <p id="emailHint" class="email-hint">CharleneClare@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2026 Charlene Clare · San Diego, CA</div>
+  </footer>
+
+  <script>
+    function copyEmail(){
+      var email = "CharleneClare@gmail.com";
+      var btn = document.getElementById('copyEmail');
+      var done = function(){
+        var old = btn.textContent;
+        btn.textContent = "✓ Copied!";
+        setTimeout(function(){ btn.textContent = old; }, 1800);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(email).then(done).catch(fallback);
+      } else { fallback(); }
+      function fallback(){
+        var t = document.createElement('textarea');
+        t.value = email; document.body.appendChild(t); t.select();
+        try{ document.execCommand('copy'); done(); }catch(e){ alert(email); }
+        document.body.removeChild(t);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlene — Remote Peer Support Job Kit</title>
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f4f0;
+      color: #1a1a1a;
+      padding: 32px 16px 80px;
+      max-width: 880px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    h1 { font-size: 1.7rem; margin-bottom: 4px; }
+    .subtitle { color: #666; font-size: 0.95rem; margin-bottom: 28px; }
+
+    nav {
+      position: sticky; top: 0;
+      background: #f5f4f0;
+      padding: 12px 0;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #e2e0d8;
+      display: flex; flex-wrap: wrap; gap: 8px;
+      z-index: 10;
+    }
+    nav a {
+      font-size: 0.8rem; font-weight: 600;
+      text-decoration: none; color: #4338ca;
+      background: #eef2ff; border: 1px solid #c7d2fe;
+      padding: 5px 12px; border-radius: 20px;
+    }
+    nav a:hover { background: #e0e7ff; }
+
+    section { margin-bottom: 44px; scroll-margin-top: 70px; }
+    h2 {
+      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: #888; margin-bottom: 14px;
+      border-bottom: 1px solid #e2e0d8; padding-bottom: 6px;
+    }
+    h3 { font-size: 1.1rem; margin-bottom: 6px; }
+
+    .card {
+      background: white; border-radius: 10px;
+      padding: 20px 22px; margin-bottom: 14px;
+      border: 1px solid #e8e6e0;
+    }
+    .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; gap: 12px; }
+    .card-title { font-weight: 600; font-size: 1.05rem; }
+    .badge { font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+    .badge-green { background: #dcfce7; color: #166534; }
+    .badge-blue  { background: #dbeafe; color: #1e40af; }
+    .badge-amber { background: #fef9c3; color: #854d0e; }
+    .badge-purple{ background: #f3e8ff; color: #6b21a8; }
+
+    .card p { font-size: 0.9rem; color: #444; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+    .tag { font-size: 0.74rem; background: #f0eee8; border-radius: 6px; padding: 2px 9px; color: #555; }
+
+    a.apply-btn {
+      display: inline-block; margin: 4px 6px 0 0;
+      font-size: 0.82rem; font-weight: 600; color: #2563eb;
+      text-decoration: none; border: 1px solid #bfdbfe;
+      border-radius: 6px; padding: 5px 13px; background: #eff6ff;
+    }
+    a.apply-btn:hover { background: #dbeafe; }
+
+    .note { background: #fffbe6; border: 1px solid #fde68a; border-radius: 10px; padding: 18px 22px; }
+    .note h3 { color: #92400e; }
+    .note ul { padding-left: 18px; }
+    .note li { font-size: 0.9rem; color: #444; padding: 4px 0; }
+
+    .good { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .good h3 { color: #166534; }
+    .gap  { background: #fef2f2; border: 1px solid #fecaca; }
+    .gap h3 { color: #991b1b; }
+
+    /* cover letters */
+    .letter {
+      background: white; border: 1px solid #e8e6e0; border-radius: 10px;
+      padding: 26px 30px; margin-bottom: 16px;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 0.92rem; color: #222; white-space: pre-wrap;
+    }
+    .letter-head {
+      display:flex; justify-content:space-between; align-items:center;
+      margin-bottom: 6px; gap: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .copy-btn {
+      font-size: 0.74rem; font-weight: 600; cursor: pointer;
+      background: #f0eee8; border: 1px solid #d8d4c8; border-radius: 6px;
+      padding: 4px 11px; color: #444;
+    }
+    .copy-btn:hover { background: #e6e2d6; }
+    details { margin-bottom: 14px; }
+    summary {
+      cursor: pointer; font-weight: 600; font-size: 1rem;
+      padding: 14px 18px; background: white; border: 1px solid #e8e6e0;
+      border-radius: 10px; list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "▸ "; color: #6366f1; }
+    details[open] summary::before { content: "▾ "; }
+    details[open] summary { border-radius: 10px 10px 0 0; border-bottom: none; }
+  </style>
+</head>
+<body>
+
+  <h1>Charlene — Remote Peer Support Job Kit</h1>
+  <p class="subtitle">Certified Peer Support Specialist (CalMHSA #MPSS-GJSHEL) · San Diego · Updated June 2026<br>
+  <em>Unlisted review page — not linked from the main site, not indexed by search engines.</em></p>
+
+  <nav>
+    <a href="#jobs">Jobs</a>
+    <a href="#resume">Resume Fixes</a>
+    <a href="#letters">Cover Letters</a>
+    <a href="#checklist">Apply Checklist</a>
+  </nav>
+
+  <!-- ============ JOBS ============ -->
+  <section id="jobs">
+    <h2>Remote Peer Support Openings — Where to Apply</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Centene / Health Net — Peer Recovery Support Specialist</span>
+        <span class="badge badge-green">Best Fit · Remote</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">100% Remote</span>
+        <span class="tag">Health Net = CA arm</span>
+        <span class="tag">Cert required ✓ she has it</span>
+        <span class="tag">~$40–50k</span>
+      </div>
+      <p>Big national managed-care company; Health Net is its California Medi-Cal plan. Role: help members build behavioral routines, connect them to community resources, support recovery. Requires HS diploma + peer recovery certification (she qualifies). Some postings want 2 yrs experience — see resume notes. Individual postings rotate, so use the search link to find the current opening.</p>
+      <a class="apply-btn" href="https://jobs.centene.com/us/en/search-results?keywords=peer%20support" target="_blank">Search Centene: "peer support" →</a>
+      <a class="apply-btn" href="https://jobs.centene.com/us/en/our-health-plans/california/health-net/" target="_blank">Health Net CA jobs →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Kaiser Permanente — Peer Support / Behavioral Health</span>
+        <span class="badge badge-blue">Strong Match</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Remote + CA-based</span>
+        <span class="tag">Uses peers w/ lived experience</span>
+        <span class="tag">Strong benefits</span>
+      </div>
+      <p>Kaiser runs peer-support programs that keep patients engaged in treatment. Search "peer support" + filter Remote / California. San Diego is a Kaiser region, so hybrid roles are realistic too.</p>
+      <a class="apply-btn" href="https://www.kaiserpermanentejobs.org/search-jobs" target="_blank">Search Kaiser jobs →</a>
+      <a class="apply-btn" href="https://www.kaiserpermanentejobs.org/mentalhealthcareers" target="_blank">Mental health careers →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Optum / UnitedHealth — Behavioral Health Peer Support</span>
+        <span class="badge badge-blue">Strong Match</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">Remote roles</span>
+        <span class="tag">Telehealth</span>
+        <span class="tag">National employer</span>
+      </div>
+      <p>Optum hires remote behavioral health and peer support staff nationwide. Filter their careers site for "peer support" + Remote.</p>
+      <a class="apply-btn" href="https://www.indeed.com/q-Optum-Health-l-Remote-jobs.html" target="_blank">Optum remote (Indeed) →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">California Peer Certification — Official Job Board</span>
+        <span class="badge badge-purple">Check Weekly</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">County behavioral health</span>
+        <span class="tag">Community agencies</span>
+        <span class="tag">"Remote only" filter</span>
+      </div>
+      <p>The official CA board where counties and recovery agencies post peer roles. Tick the "Remote positions only" box. These often value the CalMHSA certification she already holds.</p>
+      <a class="apply-btn" href="https://www.capeercertification.org/peer-support-specialist-job-board/" target="_blank">Open job board →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Indeed / ZipRecruiter — Live Search Feeds</span>
+        <span class="badge badge-amber">Apply to 3–5/week</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">71+ telehealth peer jobs in CA</span>
+        <span class="tag">New postings daily</span>
+      </div>
+      <p>Set these searches and apply to a few each week. Turn on email alerts.</p>
+      <a class="apply-btn" href="https://www.indeed.com/q-telehealth-peer-support-l-california-jobs.html" target="_blank">Indeed: CA telehealth peer →</a>
+      <a class="apply-btn" href="https://www.ziprecruiter.com/Jobs/Remote-Peer-Support/--in-California" target="_blank">ZipRecruiter: CA remote peer →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">A Place for Mom — Welcome Advisor</span>
+        <span class="badge badge-amber">Backup Path</span>
+      </div>
+      <div class="tag-row">
+        <span class="tag">100% Remote</span>
+        <span class="tag">Inbound only</span>
+        <span class="tag">Uses realtor background</span>
+      </div>
+      <p>Kept as a strong fallback. Senior-living, inbound calls/Zoom, no cold outreach — leans on her real estate + empathy rather than the peer cert.</p>
+      <a class="apply-btn" href="https://www.aplaceformom.com/about/careers/positions" target="_blank">Apply →</a>
+    </div>
+  </section>
+
+  <!-- ============ RESUME ============ -->
+  <section id="resume">
+    <h2>Resume — What's Strong & What to Add</h2>
+
+    <div class="card good">
+      <h3>✓ Already strong — keep these front and center</h3>
+      <ul>
+        <li>CalMHSA Peer Support Specialist Certification + cert # — put this in the <strong>top third</strong>, not buried under education.</li>
+        <li>The objective statement (peer support + lived experience + real estate empathy) is genuinely good — leave it.</li>
+        <li>"Multiple lived experiences" line — this is the #1 thing these employers screen for. Keep it.</li>
+        <li>Zoom / Microsoft Office / data entry — exactly the telehealth tech stack. Keep.</li>
+        <li>Decades of guiding people through emotional, high-stakes decisions — reframe real estate as <em>client advocacy</em>, which she already does.</li>
+      </ul>
+    </div>
+
+    <div class="card good">
+      <h3>✓✓ Her biggest asset: 30+ years of sustained recovery</h3>
+      <ul>
+        <li><strong>Over 30 years sober, active in AA and the recovery community.</strong> This is THE credential these jobs screen for — most applicants have a few years. Three decades of lived recovery is rare and powerful. It belongs near the top of the resume and in every cover letter.</li>
+        <li><strong>This closes the "experience" gap.</strong> Postings asking for 1–2 years of recovery experience are easily satisfied — frame her decades in AA / recovery community as ongoing lived experience and informal peer support.</li>
+        <li style="color:#92400e;"><em>Anonymity note:</em> AA tradition is personal anonymity at the public level. For peer-support jobs, naming "12-step / AA involvement" is standard and expected — but it's her call how specific to be. The letters below say "more than 30 years of sustained recovery" and she can add "through AA" if she's comfortable.</li>
+      </ul>
+    </div>
+
+    <div class="card gap">
+      <h3>⚠ Small items to tidy before applying</h3>
+      <ul>
+        <li><strong>Medi-Cal cert question.</strong> Some county/Medi-Cal roles want the specific "Medi-Cal Peer Support Specialist Certification." Confirm her CalMHSA cert satisfies this (it usually does, but worth one email to CalMHSA). Note it on the resume if so.</li>
+        <li><strong>Skills line for remote work.</strong> Add: HIPAA awareness, documentation/case notes, telehealth platforms, comfortable with EHR/data entry.</li>
+        <li><strong>Trim the 1980s real estate teaching detail</strong> — keep it as one line; lead with peer support and recovery instead.</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <h3>Suggested new resume section to add (real details filled in)</h3>
+      <p style="font-family:Georgia,serif;font-size:0.9rem;color:#333;white-space:pre-wrap;">PEER SUPPORT &amp; RECOVERY EXPERIENCE
+• More than 30 years of sustained personal recovery and active involvement in the recovery community (AA), with lived experience supporting others through addiction and life transitions.
+• Certified Peer Support Specialist — State of California / CalMHSA (2025). Completed 40 hours of training (ten 4-hour sessions) and passed the State of California certification examination. Cert #MPSS-GJSHEL.
+• Training covered recovery support, trauma-informed care, crisis navigation, confidentiality, and ethics.
+• Primary family caregiver for my husband of 52 years through the final three years of his life — coordinating doctors' appointments, managing a move and care logistics, and providing daily emotional support. Firsthand experience navigating the healthcare system and supporting a loved one through serious illness, transition, and loss.
+• Meals on Wheels volunteer, San Diego (1999–2015) — direct service to vulnerable adults.
+• Child Abuse Awareness Committee, San Diego Division (1983–1989).</p>
+      <p style="margin-top:10px;color:#166534;font-size:0.85rem;">This is ready to paste. The caregiving line is a major asset for both peer support (resilience, grief, navigating systems) and senior-living advisor roles (she has lived exactly what those families are going through).</p>
+    </div>
+  </section>
+
+  <!-- ============ COVER LETTERS ============ -->
+  <section id="letters">
+    <h2>Tailored Applications — One Per Employer</h2>
+    <p style="font-size:0.88rem;color:#666;margin-bottom:14px;">Click to expand. Hit "Copy" and paste into the application. Your name, phone, and email are already filled in — only the county/agency letter has an [Agency Name] to swap.</p>
+
+    <details>
+      <summary>Centene / Health Net — Peer Recovery Support Specialist</summary>
+      <div class="letter-head" style="padding:12px 18px 0;">
+        <span style="font-size:0.8rem;color:#888;">Best-fit role — lead with this one</span>
+        <button class="copy-btn" onclick="copyLetter(this)">Copy</button>
+      </div>
+      <div class="letter">Dear Hiring Team,
+
+I am applying for the Peer Recovery Support Specialist position with Centene / Health Net. As a Certified Peer Support Specialist through the State of California / California Mental Health Services Authority (Cert #MPSS-GJSHEL), and someone with more than 30 years of sustained personal recovery, I bring both formal training and deep lived experience to the work of walking alongside people in recovery.
+
+My background is unusual in a way that serves this role well. For nearly four decades I guided people through some of the most stressful, high-stakes transitions of their lives as a California real estate broker. That work was never really about property — it was about listening, holding steady when someone was overwhelmed, explaining hard choices clearly, and protecting people's confidence and dignity. Those are the same skills I now apply, intentionally, as a peer supporter.
+
+I also know loss and caregiving firsthand: I cared for my husband of 52 years through the final three years of his life, navigating the healthcare system and supporting him every day. That experience deepened my patience and my ability to sit with people through the hardest moments without flinching.
+
+I am comfortable working entirely by phone, Zoom, and email, and I am proficient in Microsoft Office and data entry — so the remote, telehealth nature of this role is a natural fit. I understand the importance of confidentiality, trauma-informed care, and meeting members where they are without judgment.
+
+I would welcome the chance to bring a calm, empathetic, and dependable presence to your members' recovery journeys. Thank you for your consideration.
+
+Warm regards,
+Charlene Clare
+San Diego, CA · (619) 977-4777 · CharleneClare@gmail.com</div>
+    </details>
+
+    <details>
+      <summary>Kaiser Permanente — Peer Support Specialist</summary>
+      <div class="letter-head" style="padding:12px 18px 0;">
+        <span style="font-size:0.8rem;color:#888;">San Diego is a Kaiser region — remote or hybrid</span>
+        <button class="copy-btn" onclick="copyLetter(this)">Copy</button>
+      </div>
+      <div class="letter">Dear Kaiser Permanente Hiring Team,
+
+I am writing to express my interest in a Peer Support Specialist role within your behavioral health team. I am a Certified Peer Support Specialist (California Mental Health Services Authority, Cert #MPSS-GJSHEL) based in San Diego, and I am drawn to Kaiser's model of using peers with lived experience to help patients stay engaged and supported in their treatment.
+
+I believe in that model because I have lived it. I have maintained more than 30 years of personal recovery and remain active in the recovery community, so I understand firsthand what sustained, lived support looks like. Alongside that, I spent a long career as a real estate broker helping people navigate major life transitions — divorce, loss, downsizing, starting over. The heart of that work was empathetic listening, trust, and helping people make sound decisions when they felt overwhelmed. I now bring that same steadiness to peer support.
+
+I am fully comfortable with Zoom, telehealth tools, Microsoft Office, and documentation, and I take confidentiality and professionalism seriously. I would be honored to help Kaiser patients feel less alone in their recovery.
+
+Thank you for considering my application.
+
+Sincerely,
+Charlene Clare
+San Diego, CA · (619) 977-4777 · CharleneClare@gmail.com</div>
+    </details>
+
+    <details>
+      <summary>Optum / UnitedHealth — Behavioral Health Peer Support</summary>
+      <div class="letter-head" style="padding:12px 18px 0;">
+        <span style="font-size:0.8rem;color:#888;">National remote employer</span>
+        <button class="copy-btn" onclick="copyLetter(this)">Copy</button>
+      </div>
+      <div class="letter">Dear Optum Hiring Team,
+
+I am applying for your remote Behavioral Health Peer Support position. I am a Certified Peer Support Specialist (State of California / CalMHSA, Cert #MPSS-GJSHEL) with more than 30 years of sustained personal recovery and a lifetime of helping people through difficult transitions.
+
+For many years I worked as a California real estate broker, which sounds far from behavioral health — but the core of that job was advocacy: listening carefully, building trust quickly, explaining complex situations in plain language, and supporting people through emotional, high-pressure decisions. I now channel that same presence into peer support, helping others feel heard and capable on their recovery path.
+
+I work well independently and remotely, and I am proficient with Zoom, telehealth platforms, Microsoft Office, and data entry. I am committed to trauma-informed, recovery-oriented care and to maintaining strict confidentiality.
+
+I would love to contribute to Optum's mission of making behavioral health support more accessible. Thank you for your time.
+
+Best regards,
+Charlene Clare
+San Diego, CA · (619) 977-4777 · CharleneClare@gmail.com</div>
+    </details>
+
+    <details>
+      <summary>County / Community Agency (CA Peer Certification board)</summary>
+      <div class="letter-head" style="padding:12px 18px 0;">
+        <span style="font-size:0.8rem;color:#888;">Generic version — swap in the agency name</span>
+        <button class="copy-btn" onclick="copyLetter(this)">Copy</button>
+      </div>
+      <div class="letter">Dear [Agency Name] Hiring Team,
+
+I am applying for the Peer Support Specialist position posted on the California Peer Certification job board. I hold an active Peer Support Specialist certification through the State of California / California Mental Health Services Authority (Cert #MPSS-GJSHEL) and bring more than 30 years of sustained personal recovery to this work.
+
+I am a San Diego native who spent a long career as a real estate broker guiding people through major, emotional life transitions. That work taught me to listen without judgment, build trust quickly, and help people find their footing in stressful moments — the foundation of effective peer support. I am especially committed to serving people in addiction and recovery, drawing on both my training and my own experience.
+
+I am comfortable providing support by phone, Zoom, and in person, and I am proficient in Microsoft Office and data entry for documentation. I would be grateful for the opportunity to serve [Agency Name]'s clients and community.
+
+Thank you for your consideration.
+
+Sincerely,
+Charlene Clare
+San Diego, CA · (619) 977-4777 · CharleneClare@gmail.com</div>
+    </details>
+
+    <details>
+      <summary>A Place for Mom — Welcome Advisor (backup, realtor framing)</summary>
+      <div class="letter-head" style="padding:12px 18px 0;">
+        <span style="font-size:0.8rem;color:#888;">Leans on real estate, not the peer cert</span>
+        <button class="copy-btn" onclick="copyLetter(this)">Copy</button>
+      </div>
+      <div class="letter">Dear A Place for Mom Hiring Team,
+
+I am applying for the remote Welcome Advisor position. After a long career as a California real estate broker, I have spent decades helping families make one of the hardest decisions there is — where and how a loved one should live — with patience, clarity, and genuine care.
+
+I also understand this work from the inside. I cared for my husband of 52 years through the final three years of his life — coordinating his doctors' appointments, managing a move, and walking through every hard decision alongside him. I know exactly what your families are feeling when they call, because I have been the person on the other end of that line.
+
+That is the heart of the Welcome Advisor role: being the calm, knowledgeable first voice a family hears when they are anxious and unsure. I am experienced at guiding people through emotional, high-stakes choices, explaining options plainly, and earning trust quickly. I am also a Certified Peer Support Specialist, so supporting people through stressful transitions is both my profession and my passion.
+
+I am fully set up for remote work and proficient with Zoom, Microsoft Office, and data entry. I would welcome the chance to help your families find the right next step for the people they love.
+
+Warm regards,
+Charlene Clare
+San Diego, CA · (619) 977-4777 · CharleneClare@gmail.com</div>
+    </details>
+  </section>
+
+  <!-- ============ CHECKLIST ============ -->
+  <section id="checklist">
+    <h2>Application Checklist</h2>
+    <div class="note good">
+      <h3>Before she applies anywhere</h3>
+      <ul>
+        <li>☐ Add the "Peer Support &amp; Community Experience" section to the resume (fill in real hours/volunteer work).</li>
+        <li>☐ Confirm with CalMHSA whether her cert meets the Medi-Cal Peer Support Specialist requirement; note it on the resume.</li>
+        <li>☑ Contact details are already filled in on every cover letter — just swap [Agency Name] in the county/agency one.</li>
+        <li>☐ Set up email job alerts on Indeed + ZipRecruiter for "remote peer support California."</li>
+      </ul>
+      <h3 style="margin-top:14px;">Weekly rhythm</h3>
+      <ul>
+        <li>☐ Apply to Centene/Health Net + Kaiser + Optum directly (priority).</li>
+        <li>☐ Check the CA Peer Certification board (Remote-only filter).</li>
+        <li>☐ Apply to 3–5 fresh Indeed/ZipRecruiter listings.</li>
+        <li>☐ Keep A Place for Mom as the backup application.</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function copyLetter(btn){
+      const letter = btn.parentElement.nextElementSibling.innerText;
+      navigator.clipboard.writeText(letter).then(()=>{
+        const old = btn.textContent;
+        btn.textContent = "Copied ✓";
+        setTimeout(()=>btn.textContent = old, 1600);
+      });
+    }
+  </script>
+</body>
+</html>
